@@ -72,4 +72,7 @@ dependencies {
     implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.8.0")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3")
     implementation("com.google.android.material:material:1.11.0")
+    implementation ("com.github.bumptech.glide:glide:4.14.2") // Ou a versão mais recente
+    annotationProcessor ("com.github.bumptech.glide:compiler:4.14.2")
+
 }

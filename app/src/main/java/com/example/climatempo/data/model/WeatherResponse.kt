@@ -1,24 +1,27 @@
 package com.example.climatempo.data.model
 
-import com.google.gson.annotations.SerializedName // Importe a anotação @SerializedName
+import com.google.gson.annotations.SerializedName
 
 data class WeatherResponse(
-    @SerializedName("name") // Nome da cidade
-    val name: String,
+    @SerializedName("name")
+    val name: String, // Nome da cidade
 
-    @SerializedName("main") // Objeto "main" contendo temperatura, etc.
-    val main: MainWeatherData,
+    @SerializedName("main")
+    val main: MainWeatherData, // Dados principais do clima
 
-    @SerializedName("weather") // Lista de objetos "weather" com descrição, etc.
-    val weather: List<WeatherDescription>
+    @SerializedName("weather")
+    val weather: List<WeatherDescription> // Lista de descrições do clima
 )
 
 data class MainWeatherData(
-    @SerializedName("temp") // Temperatura em graus Celsius
-    val temp: Double
+    @SerializedName("temp")
+    val temp: Double // Temperatura em graus Celsius
 )
 
 data class WeatherDescription(
-    @SerializedName("description") // Descrição do tempo (ex: "nublado")
-    val description: String
+    @SerializedName("description")
+    val description: String, // Descrição do tempo (ex: "nublado")
+
+    @SerializedName("icon") // Código do ícone do tempo (ex: "04d")
+    val icon: String
 )

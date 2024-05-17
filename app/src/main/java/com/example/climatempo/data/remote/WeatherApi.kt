@@ -11,5 +11,7 @@ interface WeatherApi {
         @Query("q") cityName: String,
         @Query("appid") apiKey: String,
         @Query("units") units: String = "metric" // Ou "imperial"
+
     ): Call<WeatherResponse> // Corrigido: tipo de retorno Call<WeatherResponse>
 }
+
