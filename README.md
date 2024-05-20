@@ -27,7 +27,7 @@ ClimaTempo é um app fácil de usar que fornece informações precisas sobre o t
 ## **Instalação**
 
 -**Clone o repositório**:
-Bash git clone ```https://github.com/lvcassouza/Clima.git```
+Bash git clone ```https://github.com/lvcassouza/ClimaTempo.git```
 
 
 -**Abra o projeto no Android Studio**:
